@@ -1,0 +1,26 @@
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set ReplaceWithRegister
+set NERDTree
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+set clipboard+=unnamed
+
+""" Mappings --------------------------------
+nmap <leader>w :action KJumpAction.Word0<cr>
+nmap <leader>l :action KJumpAction.Line<cr>
+
+map <leader>r <Action>(RenameElement)
+map <leader>a <Action>(ShowIntentionActions)
+map <leader>h <Action>(ShowErrorDescription)
